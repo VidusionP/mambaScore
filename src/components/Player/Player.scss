@@ -1,0 +1,51 @@
+
+
+.players {
+    display: flex;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    :nth-child(odd){
+        background-color: rgba(128, 0, 128, 0.671);
+    }
+    :nth-child(even){
+        background-color: rgba(128, 0, 128, 0.274);
+    }
+    &__link {
+        text-decoration: none;
+        
+        :nth-child(odd){
+            color: #f5f53b;
+        }
+        :nth-child(even){
+            color: #c03838;
+        }
+    }
+    &__name{
+        width: 32vw;
+        display: flex;
+        font-size: 2vw;
+        font-weight: 900;
+        justify-content: center;
+        align-items: center;
+    }
+    &__team{
+        font-size: 2vw;
+        font-weight: 900;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__position{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10vw;
+        font-size: 1.5vw;
+        font-weight: 900;
+    }
+    &__headshot {
+        width: 8vw;
+    }
+}

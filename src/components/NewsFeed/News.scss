@@ -1,0 +1,85 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.news {
+    width: 60%;
+    height: 70vh;
+    &__title {
+        font-family: $primary-font;
+        font-size: 2vw;
+        margin: 20px;
+    }
+    &__feed {
+        width: 100%;
+        height: 25vw;
+        background-color: rgba(194, 155, 155, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--link {
+            text-decoration: none;
+            color: black;
+            :hover {
+                transform: scale(1.05);
+            }
+        }
+        &--article {
+            margin: 0 20px;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            font-size: 1.1vw;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            :hover {
+                transform: none;
+            }
+            &--image {
+                height: 10vw;
+                width: 20vw;
+            }
+            &--date {
+                display: flex;
+                margin: 10px;
+                font-size: 1vw;
+                font-weight: 400;
+            }
+        }
+        &--box {
+            display: flex;
+            width: 90%;
+            overflow-x: scroll;
+            padding-bottom: 2vw;
+        }
+    }
+}
+
+.news__feed--box::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(226, 194, 14, 0.6);
+    background-color: rgb(250, 224, 76);
+   
+}
+
+.news__feed--box::-webkit-scrollbar
+{
+    
+    background-color: #F5F5F5;
+    height: 10px;
+}
+
+.news__feed--box::-webkit-scrollbar-thumb
+{
+    height: 5px;
+    width: 5px;
+    background-color: #FFF;
+    background-image: linear-gradient(270deg,
+                                              rgba(85, 6, 175, 1) 0%,
+                                              rgba(85, 6, 175, 1) 25%,
+                                              transparent 100%,
+                                              rgba(85, 6, 175, 1) 75%,
+                                              transparent)
+}

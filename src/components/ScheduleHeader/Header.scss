@@ -1,0 +1,56 @@
+.scheduleTitle {
+    margin-top: 100px;
+    padding-left: 60px;
+    font-size: 3vw;
+
+}
+.scheduleHeader {
+    display: flex;
+    width: 70vw;
+    overflow-y: hidden;
+    margin: auto;
+    padding-bottom: 30px;
+    
+    &__date {
+        width: 100px;
+        text-align: center;
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+        :hover {
+            color: red;
+        }
+    }
+}
+#playerStatBar {
+    width: 31vw !important;
+    margin-left: 4vw;
+}
+
+.scheduleHeader::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(226, 194, 14, 0.6);
+    background-color: rgb(250, 224, 76);
+   
+}
+
+.scheduleHeader::-webkit-scrollbar
+{
+    
+    background-color: #F5F5F5;
+    height: 10px;
+}
+
+.scheduleHeader::-webkit-scrollbar-thumb
+{
+    height: 5px;
+    width: 5px;
+    background-color: #FFF;
+    background-image: linear-gradient(270deg,
+                                              rgba(85, 6, 175, 1) 0%,
+                                              rgba(85, 6, 175, 1) 25%,
+                                              transparent 100%,
+                                              rgba(85, 6, 175, 1) 75%,
+                                              transparent)
+}

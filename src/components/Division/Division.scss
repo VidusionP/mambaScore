@@ -1,0 +1,62 @@
+.divisionTitle {
+    background-color: rgba(128, 0, 128, 0.541);
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 40px;
+}
+.divisionStanding {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    margin: 20px 0;
+    &__heading {
+        height: 50px;
+        border: 2px solid black;
+        background-color: rgb(207, 207, 207);
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-weight: 600;
+        font-family: 'Kanit', sans-serif;
+        &--rank {
+            width: 5vw;
+        }
+        &--name {
+            width: 25vw;
+        }
+        &--title {
+            width: 12vw;
+        }
+    }
+    &__body{
+        text-align: center;
+        background-color: gold;
+        display: flex;
+        height: 70px;
+        &--rank {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4vw;
+            width: 5vw;
+            border-right: 2px solid black;
+        }
+        &--name {
+            width: 25vw;
+            border-right: 2px solid black;
+            font-size: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+        }
+        &--value {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 12vw;
+            font-family: cursive;
+        }
+    }
+}

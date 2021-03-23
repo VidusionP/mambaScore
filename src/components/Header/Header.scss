@@ -1,0 +1,88 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.header {
+    background-color: purple;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+        font-size: 30px;
+        &--link {
+            display: flex;
+            text-decoration: none;
+            color: rgb(235, 235, 28);
+            padding: 10px 0;
+        }
+        &--image {
+            width: 50px;
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            animation-name:            rotate; 
+    animation-duration:        10s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+        }
+    }
+    &__navbar {
+        width: 100%;
+        &--links {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            align-items: center;
+            
+            &--item {
+                list-style-type: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                position: relative;
+                
+            }
+            &--inactive {
+                color: #fff;
+                text-decoration: none;
+                
+            }
+            &--active {
+                padding-bottom: 3px;
+                border-bottom: solid 1px #fff;
+            }
+        }
+    }
+}
+.test {
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    top: 70px;
+    background-color: rgb(235, 235, 28);
+}
+.testing {
+    display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  border: 1px solid black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-weight: 700;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+.header__navbar--links--item:hover .testing {
+    display: block;
+}

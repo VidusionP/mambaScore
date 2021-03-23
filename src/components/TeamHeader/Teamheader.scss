@@ -1,0 +1,52 @@
+.teamheader {
+    margin-top: 80px;
+    background-color: #e9cbcb;
+    &__info{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Kanit', sans-serif;
+        &--logo{
+            width: 20vw;
+        }
+        &--team{
+            text-align: center;
+            font-size: 4vw;
+            border-right: 3px solid black;
+            padding-right: 5vw;
+            &--name{
+                border-bottom: 2px solid;
+            }
+            &--rank{
+                
+            }
+        }
+        &--score{
+            font-size: 4vw;
+        }
+    }
+    &__stats{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 40px;
+        background-color: rgba(128, 0, 128, 0.541);
+        height: 10vw;
+        &--year {
+            font-size: 3vw;
+            margin-right: 12vw;
+            font-weight: 600;
+        }
+        &--rank {
+            text-align: center;
+            font-size: 2vw;
+            &--title {
+                margin: 0 2vw;
+            }
+            &--value {
+                margin: 0 2vw;
+                font-weight: 900;
+            }
+        }
+    }
+}

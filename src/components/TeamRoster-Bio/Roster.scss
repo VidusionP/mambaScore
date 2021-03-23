@@ -1,0 +1,55 @@
+.rosterYear {
+    font-weight: 900;
+    font-size: 5vw;
+    padding: 40px;
+    margin:0;
+}
+.roster {
+    margin: auto;
+    padding-top: 40px;
+    width: 60%;
+    &__headrow {
+        display: flex;
+        text-align: center;
+        border: 2px solid black;
+        background-color: bisque;
+        font-size: 1.2vw;
+        font-weight: 600;
+        &--image {
+            width: 18vw;
+        }
+        &--name {
+            width: 10vw;
+            text-align: center;
+        }
+        &--title {
+            width: 8vw;
+            
+        }
+    }
+    &__bodyrow {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5vw;
+        border: 1px black solid;
+        background-color: gold;
+        &--link {
+            text-decoration: none;
+            color: black;
+            :hover {
+                transform: scale(1.05);
+            }
+        }
+        &--image {
+            width: 15vw;
+        }
+        &--name {
+            width: 10vw;
+            text-align: center;
+        }
+        &--value {
+            width: 8vw;
+        }
+    }
+}

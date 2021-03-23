@@ -1,0 +1,28 @@
+.list {
+    width: 80%;
+    margin: auto;
+    padding-top: 90px;
+    &__heading {
+        margin-top: 30px;
+        display: flex;
+        background-color: purple;
+        border: 5px double rgb(80, 1, 80);
+        font-weight: 900;
+        color: #ebeb1c;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        font-size: 1.5vw;
+        &--sub {
+            width: 8vw;
+        }
+        &--name {
+            width: 32vw;
+        }
+        &--team {
+            width: 30vw;
+        }
+        &--position {
+            width: 10vw;
+        }
+    }
+}

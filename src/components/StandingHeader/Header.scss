@@ -1,0 +1,31 @@
+.standingheader {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #e9cbcb;
+    justify-content: space-between;
+    height: 10vw;
+    font-size: 3vw;
+    font-weight: 900;
+    &__year {
+        font-size: 4vw;
+        margin-left: 30px;
+    }
+    &__sub {
+        margin-right: 50px;
+        display: flex;
+        &--title{
+            background-color: wheat;
+            border: 1px solid black;
+            padding: 0 20px;
+            font-size: 2vw;
+            &--inactive {
+                text-decoration: none;
+            }
+            &--active {
+                color: red;
+                
+            }
+        }
+    }
+}

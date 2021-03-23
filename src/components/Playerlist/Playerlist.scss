@@ -1,0 +1,22 @@
+.playerlist {
+    &__form {
+        margin: 20px 0;
+        &--logo {
+            width: 2vw;
+            background-color: purple;
+            color: black;
+        }
+        &--search {
+            width: 20vw;
+            border-radius: 5px;
+            border: 2px solid rgb(97, 97, 97);
+            color: black;
+            padding: 10px 10px 10px 30px;
+            background-color: rgba(128, 0, 128, 0.253);
+            background-image: url('../../assests/search.svg');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position-x: 5px;
+        }
+    }
+}

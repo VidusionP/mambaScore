@@ -1,0 +1,27 @@
+.scheduleDate {
+    margin: auto;
+    width: 80%;
+    padding: 20px 0 ;
+    &__game {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        border: 1px black solid;
+        &--image{
+            width: 10vw;
+        }
+        &--card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &--time {
+                font-size: 3vw;
+                font-weight: 600;
+            }
+            &--text {}
+            &--arena {
+                font-size: 2vw;
+            }
+        }
+    }
+}

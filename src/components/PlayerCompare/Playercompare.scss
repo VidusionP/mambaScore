@@ -1,0 +1,74 @@
+.playercompare {
+    margin-top: 90px;
+    padding: 0 40px;
+    &__hero {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        border-bottom: double 5px black;
+        &--search {
+            width: 15vw;
+            margin-bottom: 10px;
+        }
+        &--image {
+            width: 20vw;
+        }
+    }
+    &__main {
+        margin-top: 20px;
+        border: 2px solid black;
+        background-color: rgb(218, 94, 94);
+        font-size: 3vw;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-evenly;
+        
+        &--player {
+            
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &--player1 {
+            border-left: 1px solid black;
+            flex-direction: row-reverse;
+        }
+    }
+    &__stats {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        border-top: 5px double black;
+        height: 50vh;
+        margin-bottom: 40px;
+        border-bottom: 5px double black;
+        &--player1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 5px 10px;
+        }
+        &--name{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 5px 10px;
+            font-weight: 700;
+        }
+        &--player2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 5px 10px;
+        }
+    }
+}
+#player1Bar, #player2Bar {
+    height: 48vh !important; 
+    margin-top: 10px;
+}

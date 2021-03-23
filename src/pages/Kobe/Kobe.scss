@@ -1,0 +1,47 @@
+.kobe {
+    margin-top: 80px;
+    background-image: url('../../assests/Kobe1.jpg');
+
+    height: 70vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    animation: fadeIn ease 5s;
+    &__title {
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4vw;
+        animation: fadeIn1 ease-in-out 8s;
+        position: fixed;
+        right: 17.5vw;
+        top: 15vw;
+        font-family: 'Source Serif Pro', serif;;
+    }
+    &__logo {
+        width: 5vw;
+    }
+}
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+@keyframes fadeIn1 {
+    0% {
+      opacity:0;
+    }
+    50% {
+        opacity:0;
+      }
+    100% {
+      opacity:1;
+    }
+  }

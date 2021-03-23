@@ -1,0 +1,101 @@
+.teamlist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-size: 5vw;
+        font-weight: 900;
+        margin: 0;
+        padding: 40px 20vw;
+        background-color: azure;
+        margin-top: 60px;
+    }
+    &__headrow {
+        display: flex;
+        font-size: 1.6vw;
+        font-weight: 600;
+        width: 70%;
+        justify-content: flex-end;
+        background-color: purple;
+        border: 5px double #500150;
+        color: #ebeb1c;
+        margin: 20px 0;
+        &--name{
+            padding-right: 21vw;
+        }
+        &--conf{
+            padding-right: 7vw;
+        }
+        &--div{
+            padding-right: 2vw;
+
+        }
+    }
+    &__body {
+        width: 70%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        &--link {
+            text-decoration: none;
+            color: black;
+            :visited {
+                text-decoration: none;
+            }
+            :focus {
+                text-decoration: none;
+            }
+            :hover {
+                box-shadow: 10px 0 20px rgba(81, 203, 238, 1);
+                border: 5px solid rgb(111, 23, 194);
+            }
+            
+            
+        }
+        &--row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border-bottom: 3px solid black;
+            :hover {
+                box-shadow: none;
+                border: none;
+            }
+            :nth-child(odd) {
+                background-color: rgba(128, 0, 128, 0.671);
+                height: 12vh;
+                color: #f5f53b;
+            }
+            :nth-child(even) {
+                background-color: rgba(128, 0, 128, 0.274);
+                color: #c03838;
+                height: 12vh;
+            }
+            &--image{
+                
+                width: 12vh;
+            }
+            &--name{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40vw;
+                font-size: 3vw;
+                
+            }
+            &--conf{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15vw;
+                font-size: 2vw;
+            }
+            &--div{
+                width: 10vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+}
