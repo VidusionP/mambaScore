@@ -16,13 +16,13 @@ class Compare extends Component {
     }
 
     updateSearch(event) {
-        axios.get(`http://data.nba.net/prod/v1/2020/players/${event.value}_profile.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players/${event.value}_profile.json`)
             .then(response => {
                 this.setState ({
                     player1: response.data.league.standard.stats.latest
                 })
             })
-        axios.get(`http://data.nba.net/prod/v1/2020/players.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players.json`)
             .then(response => {
                 this.setState ({
                     player1ID: response.data.league.standard.find(x=>x.personId ===event.value)
@@ -31,13 +31,13 @@ class Compare extends Component {
         
     }
     updateSearch1(event) {
-        axios.get(`http://data.nba.net/prod/v1/2020/players/${event.value}_profile.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players/${event.value}_profile.json`)
             .then(response => {
                 this.setState ({
                     player2: response.data.league.standard.stats.latest
                 })
             })
-        axios.get(`http://data.nba.net/prod/v1/2020/players.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players.json`)
             .then(response => {
                 this.setState ({
                     player2ID: response.data.league.standard.find(x=>x.personId ===event.value)
@@ -48,31 +48,31 @@ class Compare extends Component {
     
     componentDidMount() {
         const {match: { params} } = this.props;
-        axios.get(`http://data.nba.net/prod/v1/2020/players/${params.id}_profile.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players/${params.id}_profile.json`)
             .then(response => {
                 this.setState({
                     player1: response.data.league.standard.stats.latest
                 })
             })
-        axios.get(`http://data.nba.net/prod/v1/2020/players/${params.id2}_profile.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players/${params.id2}_profile.json`)
             .then(response => {
                 this.setState({
                     player2: response.data.league.standard.stats.latest
                 })
             })
-        axios.get("http://data.nba.net/prod/v1/2020/players.json")
+        axios.get("https://data.nba.net/prod/v1/2020/players.json")
             .then(response => {
                 this.setState({
                     player1ID: response.data.league.standard.find(x=>x.personId ===params.id)
                 })
             })
-        axios.get("http://data.nba.net/prod/v1/2020/players.json")
+        axios.get("https://data.nba.net/prod/v1/2020/players.json")
             .then(response => {
                 this.setState({
                     player2ID: response.data.league.standard.find(x=>x.personId ===params.id2)
                 })
             })
-        axios.get("http://data.nba.net/prod/v1/2020/players.json")
+        axios.get("https://data.nba.net/prod/v1/2020/players.json")
             .then(response => {
                 this.setState({
                     test: response.data.league.standard.filter(x => x.teamId).sort(function(a, b) { 

@@ -14,13 +14,13 @@ class Vidu extends Component {
     }
     componentDidMount() {
         const {match: { params} } = this.props;
-        axios.get(`http://data.nba.net/prod/v1/${params.id}/scoreboard.json`)
+        axios.get(`https://data.nba.net/prod/v1/${params.id}/scoreboard.json`)
             .then(response => {
                 this.setState({
                     today: response.data.games
                 })
             })
-            axios.get(`http://data.nba.net/prod/v1/calendar.json`)
+            axios.get(`https://data.nba.net/prod/v1/calendar.json`)
             .then(response => {
                 this.setState({
                     all: response.data
@@ -39,13 +39,13 @@ class Vidu extends Component {
     componentDidUpdate = (prevProps) => {
         if(this.props.match.params.id !== prevProps.match.params.id) {
             const {match: { params} } = this.props;
-            axios.get(`http://data.nba.net/prod/v1/${params.id}/scoreboard.json`)
+            axios.get(`https://data.nba.net/prod/v1/${params.id}/scoreboard.json`)
                 .then(response => {
                     this.setState({
                         today: response.data.games
                     })
                 })
-                axios.get(`http://data.nba.net/prod/v1/calendar.json`)
+                axios.get(`https://data.nba.net/prod/v1/calendar.json`)
                 .then(response => {
                     this.setState({
                         all: response.data

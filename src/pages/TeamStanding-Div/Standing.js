@@ -15,7 +15,7 @@ class Standing extends Component {
         northwest: []
     }
     componentDidMount() {
-        axios.get(`http://data.nba.net/prod/v1/current/standings_division.json`)
+        axios.get(`https://data.nba.net/prod/v1/current/standings_division.json`)
             .then(response => {
                 this.setState({
                     southeast: response.data.league.standard.conference.east.southeast,

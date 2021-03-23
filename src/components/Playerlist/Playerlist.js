@@ -5,8 +5,8 @@ import Player from "../Player/Player"
 import search from '../../assests/2.svg'
 import { Link, NavLink } from 'react-router-dom';
 
-const url = "http://data.nba.net/prod/v1/2020/players.json"
-const url1 = "http://data.nba.net/prod/v2/2020/teams.json"
+const url = "https://data.nba.net/prod/v1/2020/players.json"
+const url1 = "https://data.nba.net/prod/v2/2020/teams.json"
 
 class Playerlist extends Component {
     state = {

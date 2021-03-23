@@ -8,7 +8,7 @@ class Team extends Component {
         teams:[]
     }
     componentDidMount() {
-        axios.get("http://data.nba.net/prod/v2/2020/teams.json")
+        axios.get("https://data.nba.net/prod/v2/2020/teams.json")
             .then(response => {
                 this.setState({
                     teams: response.data.league.standard.filter(x=>x.isNBAFranchise===true)

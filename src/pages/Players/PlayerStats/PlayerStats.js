@@ -6,8 +6,8 @@ import Games from '../../../components/Last3Games/Games'
 import search from '../../../assests/2.svg'
 
 
-const url1 = "http://data.nba.net/prod/v1/2020/players.json"
-const url = "http://data.nba.net/prod/v2/2020/teams.json"
+const url1 = "https://data.nba.net/prod/v1/2020/players.json"
+const url = "https://data.nba.net/prod/v2/2020/teams.json"
 class PlayerStats extends Component {
     state = {
         player:[],
@@ -19,13 +19,13 @@ class PlayerStats extends Component {
     }
     componentWillMount() {
         const {match: { params} } = this.props;
-        axios.get(`http://data.nba.net/prod/v1/2020/players/${params.id}_profile.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players/${params.id}_profile.json`)
             .then(response => {
                 this.setState({
                     player: response.data.league.standard.stats.regularSeason
                 })
             })
-        axios.get(`http://data.nba.net/prod/v1/2020/players/${params.id}_gamelog.json`)
+        axios.get(`https://data.nba.net/prod/v1/2020/players/${params.id}_gamelog.json`)
             .then(response => {
                 this.setState({
                     threegamestats: response.data.league.standard
