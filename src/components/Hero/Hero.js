@@ -7,7 +7,7 @@ import Carasole from "../Carasole/Carasole"
 import ball from '../../assests/Ball.png'
 
 const today =new Date().getFullYear()+""+((new Date().getMonth()+1)<10? "0" + (new Date().getMonth()+1):(new Date().getMonth()+1))+""+(new Date().getDate()<10? "0" + new Date().getDate(): new Date().getDate())
-const url = `http://data.nba.net/prod/v1/${today}/scoreboard.json`
+const url = `https://data.nba.net/prod/v1/${today}/scoreboard.json`
 
 class Hero extends Component {
     state = {
